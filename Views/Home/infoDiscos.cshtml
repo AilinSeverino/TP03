@@ -2,9 +2,9 @@ artista: @ViewBag.arista;
 productor: @ViewBag.productor;
 genero musical: @ViewBag.generoMusical;
 <img src = /@ViewBag.foto alt = @ViewBag.nombre>
-@foreach(Disco disco in @ViewBag.temas)
+@foreach(string disco in @ViewBag.Disco.temas)
 {
     <p>TEMAS:</p>
-    <p> @disco.</p>
+    <p> @disco.temas</p>
 }
 ID: @ViewBag.ID;

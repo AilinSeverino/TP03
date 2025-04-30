@@ -1,13 +1,14 @@
 ﻿@{
-    ViewData["Title"] = "CATALOGO DE DISCOS DE AVA";
+    ViewData["Title"] = "DISQUERA AVA";
 }
 
 <div>
-    <h1>Index</h1>
-
-    @foreach(GrupoDiscos disco in ViewBag.ListDiscos.Values)
+    <h1>Catalogo de discos</h1>
+    
+@foreach(Disco disco in ViewBag.diccionario.Values)
     {
-        <p>Nombre del disco: @disco.nombre</p>
-        <p>Nombre del disco: @disco.nombre</p>
+     <p>Nombre: @disco.nombre</p>
+     <img src = /@ViewBag.foto alt = @ViewBag.nombre>
+     <a href = '@Url.Action("MostrarDisco", "Home", new{ID = disco.ID})' > Ir a infoDiscos</a>
     }
 </div>

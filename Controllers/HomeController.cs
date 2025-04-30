@@ -17,7 +17,7 @@ public class HomeController : Controller
     {
         GrupoDiscos.InicializarDiscos();
         ViewBag.diccionario = GrupoDiscos.ListDiscos;
-        return View();
+        return View("Views/Home/Index.cshtml");
     }
 
     public IActionResult MostrarDisco(int ID)

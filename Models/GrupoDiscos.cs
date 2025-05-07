@@ -6,7 +6,7 @@ public class GrupoDiscos
         public static void InicializarDiscos()
         {
             ListDiscos = new Dictionary<int, Disco>();
-
+            
             // Inicialización de discos con tipos explícitos
             List<string> temasHarrysHouse = new List<string> { "1.Music for a sushi restaurant","2.Late night talking","3.Grapejuice","4.As it was","5.Daylight","6.Little freak","7.Matilda","8.Cinema","9.Daydreaming","10.Keep driving","11.Satellite","12.Boyfriends","13.Love of my life" };
             Disco HarrysHouse = new Disco("HarrysHouse","Harry styles", "Jose", "Pop", temasHarrysHouse, 1, "fotos/harry.jfif");
@@ -62,7 +62,8 @@ public class GrupoDiscos
         {
             Console.WriteLine("El disco ya existe");
         }
-        else{
+        else
+        {
             ListDiscos.Add(ID, nombreDisco);
         }
         }

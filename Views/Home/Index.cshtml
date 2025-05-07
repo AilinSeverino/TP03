@@ -2,13 +2,14 @@
     ViewData["Title"] = "DISQUERA AVA";
 }
 
+<h1>Catalogo de discos</h1>
 <div>
-    <h1>Catalogo de discos</h1>
-    
 @foreach(Disco disco in ViewBag.diccionario.Values)
     {
+     <div>
+    <img src = /@ViewBag.fotos alt = @ViewBag.nombre>
      <p>Nombre: @disco.nombre</p>
-     <img src = /@ViewBag.foto alt = @ViewBag.nombre>
      <a href = '@Url.Action("MostrarDisco", "Home", new{ID = disco.ID})' > Ir a infoDiscos</a>
+     </div>
     }
 </div>

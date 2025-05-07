@@ -1,10 +1,15 @@
-artista: @ViewBag.arista;
-productor: @ViewBag.productor;
-genero musical: @ViewBag.generoMusical;
+<div>
+artista: @ViewBag.artista
+productor: @ViewBag.productor
+genero musical: @ViewBag.generoMusical
+ID: @ViewBag.ID
 <img src = /@ViewBag.foto alt = @ViewBag.nombre>
-@foreach(string disco in @ViewBag.Disco.temas)
+<ul>
+<p>TEMAS:</p>
+@foreach(string tema in @ViewBag.temas)
 {
-    <p>TEMAS:</p>
-    <p> @disco.temas</p>
+    <li><a>@tema</a></li>
 }
-ID: @ViewBag.ID;
+</ul>
+</div>
+<a href='@Url.Action("Index","Home")' alt = "Volver a la pag principal"> Volver a la pag principal</a>

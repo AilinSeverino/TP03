@@ -1,5 +1,6 @@
 *{
   background-color: bisque;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -18,6 +19,10 @@ h1{
   text-align: center;
   letter-spacing: 0.2cap;
   font-family: fantasy;
+}
+
+div img{
+  border: 5px solid black;
 }
 
 div div {
@@ -44,36 +49,52 @@ section div p{
   font-size: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   float: left;
-  margin: 1%;
+  margin: 0.5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   padding: 1%;
   border-radius: 10px;
   background-color: rgb(153, 117, 73);
 }
 
 section div img{
-  float:right;
-  border: solid black 5px 5px 5px 5px;
+  width: 20%;
+  height: 20%;
+  clear: both;
+  float: inline-start;
+  margin-left: 0.5%;
+  border: 5px solid black;
 }
 
 section div ul h3{
-  background-color: rgb(153, 117, 73);
+  background-color: #9bafee;
 }
 
 section div ul{
-  background-color: rgb(153, 117, 73);
+  background-color: #9bafee;
   clear: both;
-  margin: 0.5%;
+  margin-left: 0.5%;
   padding: 1%;
   width: 20%;
   height: 20%;
+  float: left;
 }
 
 section div ul li{
-  background-color: rgb(153, 117, 73);
+  background-color: #9bafee;
+  list-style-type: none;
 }
 
 section div ul li a{
-  background-color: rgb(153, 117, 73);
+  background-color: #9bafee;
+}
+
+.uno div a{
+  clear: both;
+  float: left;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+  text-decoration: underline;
 }
 
 body {

@@ -1,15 +1,20 @@
-ir<div>
-artista: @ViewBag.artista
-productor: @ViewBag.productor
-genero musical: @ViewBag.generoMusical
-ID: @ViewBag.ID
-<img src = /@ViewBag.foto alt = @ViewBag.nombre>
+<section>
+<div>
+<p>ARTISTA: @ViewBag.disco.artista</p>
+<p>PRODUCTOR: @ViewBag.disco.productor</p>
+<p>GENERO MUSICAL: @ViewBag.disco.generoMusical</p>
+<p>ID: @ViewBag.ID</p>
+</div>
+
+<div>
 <ul>
-<p>TEMAS:</p>
+<h3>TEMAS:</h3>
 @foreach(string tema in @ViewBag.temas)
 {
     <li><a>@tema</a></li>
 }
 </ul>
+<img src = /@ViewBag.disco.foto alt = @ViewBag.disco.nombre>
 </div>
+</section>
 <a href='@Url.Action("Index","Home")' alt = "Volver a la pag principal"> Volver a la pag principal</a>

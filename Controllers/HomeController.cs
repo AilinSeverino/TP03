@@ -17,7 +17,7 @@ public class HomeController : Controller
     {
         GrupoDiscos.InicializarDiscos();
         ViewBag.diccionario = GrupoDiscos.ListDiscos;
-        return View("Views/Home/Index.cshtml");
+        return View();
     }
 
     public IActionResult MostrarDisco(int ID)
@@ -26,9 +26,6 @@ public class HomeController : Controller
         if(GrupoDiscos.ListDiscos.ContainsKey(ID))
         {
             ViewBag.disco = GrupoDiscos.ListDiscos[ID];
-            ViewBag.disco = GrupoDiscos.ListDiscos[ID].artista;
-            ViewBag.disco = GrupoDiscos.ListDiscos[ID].productor;
-            ViewBag.disco = GrupoDiscos.ListDiscos[ID].generoMusical;
             ViewBag.temas = GrupoDiscos.ListDiscos[ID].temas;
         }
         return View("infoDiscos");

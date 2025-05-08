@@ -7,8 +7,8 @@
 @foreach(Disco disco in ViewBag.diccionario.Values)
     {
      <div>
-    <img src = /@ViewBag.fotos alt = @ViewBag.nombre>
-     <p>Nombre: @disco.nombre</p>
+    <img src = @disco.foto alt = @disco.nombre>
+     <p>@disco.nombre</p>
      <a href = '@Url.Action("MostrarDisco", "Home", new{ID = disco.ID})' > Ir a infoDiscos</a>
      </div>
     }
